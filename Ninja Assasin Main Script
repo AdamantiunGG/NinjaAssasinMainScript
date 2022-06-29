@@ -10,7 +10,6 @@ local ImageLabel = Instance.new("ImageLabel")
 local AutoTrain = Instance.new("TextButton")
 local AdminScript = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
-local SafeSpot = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 
 --Properties:
@@ -77,7 +76,7 @@ AdminScript.Font = Enum.Font.SourceSans
 AdminScript.Text = "Admin"
 AdminScript.TextColor3 = Color3.fromRGB(0, 0, 0)
 AdminScript.TextSize = 14.000
-Adminscript.MouseButton1Down:connect(function()
+AdminScript.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
 
@@ -91,41 +90,6 @@ TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
 TextButton.MouseButton1Down:connect(function()
 	Main.Visible = false
-end)
-
-SafeSpot.Name = "SafeSpot"
-SafeSpot.Parent = Main
-SafeSpot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SafeSpot.Position = UDim2.new(0.375394315, 0, 0.716894984, 0)
-SafeSpot.Size = UDim2.new(0, 78, 0, 21)
-SafeSpot.Font = Enum.Font.SourceSans
-SafeSpot.Text = "SafeSpot"
-SafeSpot.TextColor3 = Color3.fromRGB(0, 0, 0)
-SafeSpot.TextSize = 14.000
-SafeSpot.MouseButton1Down:connect(function()
-	local Char = game.Players.LocalPlayer.Character 
-	_G.SafeSpot = not _G.SafeSpot
-	if _G.SafeSpot then
-		SafeSpot.Text = 'UnSafeSpot'
-		table.insert(Pos, Char.Head.Position)
-	else
-		SafeSpot.Text = 'SafeSpot'
-		wait(0.5)
-		Char.HumanoidRootPart.CFrame = CFrame.new(Pos[1])
-		table.clear(Pos)
-	end
-	while game.RunService.RenderStepped:wait() do
-		if _G.SafeSpot then
-			pcall(function()
-				Char.HumanoidRootPart.CFrame = CFrame.new(0, 4000, 50500)
-				for i,v in pairs(Char:GetChildren()) do
-					v.Velocity = Vector3.new(0,0,0)
-				end
-			end)
-		else
-			break
-		end
-	end
 end)
 
 TextLabel.Parent = Main
