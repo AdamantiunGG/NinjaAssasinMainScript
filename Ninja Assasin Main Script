@@ -40,7 +40,7 @@ TextLabel.Parent = Main
 TextLabel.BackgroundColor3 = Color3.fromRGB(82, 82, 82)
 TextLabel.Size = UDim2.new(0, 520, 0, 50)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Ninja Assasin Gui V1 -Made by Biel"
+TextLabel.Text = "Delusion Gui Free"
 TextLabel.TextColor3 = Color3.fromRGB(1, 1, 1)
 TextLabel.TextSize = 17.000
 
