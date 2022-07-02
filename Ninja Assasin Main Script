@@ -146,26 +146,7 @@ RainbownYang.Text = "Rainbown Yang"
 RainbownYang.TextColor3 = Color3.fromRGB(0, 0, 0)
 RainbownYang.TextSize = 14.000
 RainbownYang.MouseButton1Down:connect(function()
-	while true do
-		wait(0.25)
-                game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Yang19") 
-                wait(0.25)
-		game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Yang18") 
-		wait(0.25)
-		game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Yang17") 
-		wait(0.25)
-		game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Yang16") 
-		wait(0.25)
-		game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Yang15") 
-		wait(0.25)
-		game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Yang14") 
-		wait(0.25)
-		game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Yang13") 
-		wait(0.25)
-		game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Yang12") 
-		wait(0.25)
-	end
-
+	print("only on paid version")
 end)
 
 RainbownYing.Name = "RainbownYing"
@@ -178,26 +159,7 @@ RainbownYing.Text = "Rainbown Ying"
 RainbownYing.TextColor3 = Color3.fromRGB(255, 255, 255)
 RainbownYing.TextSize = 14.000
 RainbownYing.MouseButton1Down:connect(function()
-	while true do
-		wait(0.25)
-                game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Ying19")
-                whait(0.25)
-		game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Ying18") 
-		wait(0.25)
-		game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Ying17") 
-		wait(0.25)
-		game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Ying16") 
-		wait(0.25)
-		game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Ying15") 
-		wait(0.25)
-		game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Ying14") 
-		wait(0.25)
-		game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Ying13") 
-		wait(0.25)
-		game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Cloth", "Ying12") 
-		wait(0.25)
-	end
-
+	print("only on paid version")
 end)
 
 AutoTrain.Name = "AutoTrain"
