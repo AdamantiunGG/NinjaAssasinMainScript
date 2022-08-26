@@ -146,8 +146,8 @@ RainbownYang.Text = "Rainbown Yang"
 RainbownYang.TextColor3 = Color3.fromRGB(0, 0, 0)
 RainbownYang.TextSize = 14.000
 RainbownYang.MouseButton1Down:connect(function()
-local message = Instance.new("Message",workspace)
-message.Text = "print("only on paid version")"
+	local message = Instance.new("Message",workspace)
+message.Text = "only on paid version."
 wait(4)
 message:Destroy()
 end)
@@ -163,7 +163,7 @@ RainbownYing.TextColor3 = Color3.fromRGB(255, 255, 255)
 RainbownYing.TextSize = 14.000
 RainbownYing.MouseButton1Down:connect(function()
 	local message = Instance.new("Message",workspace)
-message.Text = "print("only on paid version")"
+message.Text = "only on paid version."
 wait(4)
 message:Destroy()
 end)
