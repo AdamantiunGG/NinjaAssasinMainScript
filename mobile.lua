@@ -1,9 +1,3 @@
-local message = Instance.new("Message",workspace)
-    message.Text = "Starting Auto Farm"
-    wait(4)
-    message:Destroy()
-wait(2)
-
 local AFK = Instance.new("ScreenGui")
 local AFKframe = Instance.new("Frame")
 local timebar = Instance.new("Frame")
@@ -119,7 +113,7 @@ end
 wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(300000, 300001, 300000)
 end
-
+wait(1)
 while wait() do
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
         if v.name == "Train" then
@@ -127,7 +121,8 @@ while wait() do
         end
     end
 end
-
+end)
+wait()
 while true do
     wait(0.10)
     game.ReplicatedStorage.RemoteEvent.AddPowerEvent:FireServer("FromTraining", 10)
@@ -138,3 +133,4 @@ while true do
     wait(0.10)
     game.ReplicatedStorage.RemoteEvent.AddPowerEvent:FireServer("FromTraining", 7)
 end
+end)
